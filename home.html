@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Mimigram</h2>
+        <form id="signupForm" onsubmit="signup(event)">
+            <label for="name">Name</label>
+            <input type="text" id="signupNameField" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="text" id="signupEmailField" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="signupPhoneField" name="phone" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="signupPasswordField" name="password" required>
+
+            <p id="error-message" style="color: red; display: none;"></p>
+        <div class="g-recaptcha" data-sitekey="6LcdjuoqAAAAAAu51foOBClqkTkLspb3Bi8b3rqX"></div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="index.html">Login here</a></p>
+        <button class="google">
+            <img width="30px" src="google.png" alt="google"> Sign Up with Google 
+        </button>
+        <br>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
